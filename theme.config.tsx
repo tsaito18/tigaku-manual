@@ -1,10 +1,14 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span style={{ fontWeight: "600", fontSize: "1.2rem" }}>地学部マニュアル</span>,
+  logo: (
+    <span style={{ fontWeight: "600", fontSize: "1.2rem" }}>
+      地学部マニュアル
+    </span>
+  ),
   search: {
-    placeholder: 'マニュアルを検索...',
+    placeholder: "マニュアルを検索...",
   },
   editLink: {
     component: null,
@@ -13,22 +17,22 @@ const config: DocsThemeConfig = {
     content: null,
   },
   footer: {
-    text: '©︎2023 齋藤 大雅',
+    component: null,
   },
   themeSwitch: {
     useOptions() {
       return {
-        light: 'ライト',
-        dark: 'ダーク',
-        system: '自動'
-      }
-    }
+        light: "ライト",
+        dark: "ダーク",
+        system: "自動",
+      };
+    },
   },
   useNextSeoProps() {
     return {
-      titleTemplate: '%s - 地学部マニュアル'
-    }
+      titleTemplate: "%s - 地学部マニュアル",
+    };
   },
-}
+};
 
-export default config
+export default config;
