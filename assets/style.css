@@ -1,0 +1,9 @@
+body {
+  font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'BIZ UDGothic',
+    'メイリオ', sans-serif;
+}
+
+img {
+  max-height: 450px;
+  width: auto;
+}

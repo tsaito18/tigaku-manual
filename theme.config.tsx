@@ -1,14 +1,14 @@
-import React from "react";
-import { DocsThemeConfig } from "nextra-theme-docs";
+import React from 'react';
+import { DocsThemeConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
   logo: (
-    <span style={{ fontWeight: "600", fontSize: "1.2rem" }}>
+    <span style={{ fontWeight: '600', fontSize: '1.2rem' }}>
       地学部マニュアル
     </span>
   ),
   search: {
-    placeholder: "マニュアルを検索...",
+    placeholder: 'マニュアルを検索...',
   },
   editLink: {
     component: null,
@@ -22,15 +22,15 @@ const config: DocsThemeConfig = {
   themeSwitch: {
     useOptions() {
       return {
-        light: "ライト",
-        dark: "ダーク",
-        system: "自動",
+        light: 'ライト',
+        dark: 'ダーク',
+        system: '自動',
       };
     },
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "%s - 地学部マニュアル",
+      titleTemplate: '%s - 地学部マニュアル',
     };
   },
 };
